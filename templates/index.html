@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>House Price Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏠 House Price Prediction</h1>
+
+<p class="subtitle">
+
+Machine Learning using Flask
+
+</p>
+
+<form action="/predict" method="POST">
+
+<table>
+
+<tr>
+
+<td>Area (sq ft)</td>
+
+<td><input type="number" name="area" required></td>
+
+</tr>
+
+<tr>
+
+<td>Bedrooms</td>
+
+<td><input type="number" name="bedrooms" required></td>
+
+</tr>
+
+<tr>
+
+<td>Bathrooms</td>
+
+<td><input type="number" name="bathrooms" required></td>
+
+</tr>
+
+<tr>
+
+<td>Stories</td>
+
+<td><input type="number" name="stories" required></td>
+
+</tr>
+
+<tr>
+
+<td>Main Road</td>
+
+<td>
+
+<select name="mainroad">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Guest Room</td>
+
+<td>
+
+<select name="guestroom">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Basement</td>
+
+<td>
+
+<select name="basement">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Hot Water Heating</td>
+
+<td>
+
+<select name="hotwaterheating">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Air Conditioning</td>
+
+<td>
+
+<select name="airconditioning">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Parking</td>
+
+<td>
+
+<input type="number" name="parking" required>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Preferred Area</td>
+
+<td>
+
+<select name="prefarea">
+
+<option value="1">Yes</option>
+
+<option value="0">No</option>
+
+</select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Furnishing Status</td>
+
+<td>
+
+<select name="furnishingstatus">
+
+<option value="2">Furnished</option>
+
+<option value="1">Semi-Furnished</option>
+
+<option value="0">Unfurnished</option>
+
+</select>
+
+</td>
+
+</tr>
+
+</table>
+
+<input class="button" type="submit" value="Predict House Price">
+
+</form>
+
+{% if prediction_text %}
+
+<div class="result">
+
+{{ prediction_text }}
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
