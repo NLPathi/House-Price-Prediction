@@ -176,13 +176,10 @@ http://127.0.0.1:5000
 
 ## 📷 Screenshots
 
-### Home Page
-
-(Add screenshot here)
 
 ### Prediction Result
 
-(Add screenshot here)
+![Prediction Result](Screenshots/hp_output.png)
 
 ---
 
@@ -207,9 +204,9 @@ M.Tech (Computer Science)
 
 Aspiring Software Engineer | Machine Learning Enthusiast | Data Analytics Enthusiast
 
-GitHub: https://github.com/YOUR_GITHUB_USERNAME
+GitHub: https://github.com/NLPathi
 
-LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME
+LinkedIn: https://www.linkedin.com/in/lakshmipathinakka/
 
 ---
 
